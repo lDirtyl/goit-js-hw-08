@@ -1,0 +1,42 @@
+@import url('./modern-normalize.css');
+
+body {
+  padding: 24px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 1128px;
+}
+
+.gallery-link {
+  display: block;
+  height: 200px;
+  width: 100%;
+
+  transition: transform 250ms linear;
+}
+
+.gallery-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (hover: hover) {
+  .gallery-link:hover {
+    transform: scale(1.05);
+  }
+}
